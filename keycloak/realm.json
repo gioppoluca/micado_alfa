@@ -1,0 +1,61 @@
+{
+  "id": "${KC_REALM_NAME}",
+  "realm": "${KC_REALM_NAME}",
+  "sslRequired": "none",
+  "enabled": true,
+  "eventsEnabled": true,
+  "eventsExpiration": 900,
+  "adminEventsEnabled": true,
+  "adminEventsDetailsEnabled": true,
+  "attributes": {
+    "adminEventsExpiration": "900"
+  },
+  "clients": [
+      {
+      "id": "micado",
+      "clientId": "micado",
+      "name": "micado",
+      "enabled": true,
+      "publicClient": false,
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "serviceAccountsEnabled": true,
+      "secret": "5123feeb-8754-49bf-b98a-2d5411bb53b",
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "rootUrl": "http://backend:3000",
+      "adminUrl": "http://backend:3000",
+      "baseUrl": "http://backend:3000",
+      "redirectUris": [
+        "http://backend:3000/*"
+      ],
+      "webOrigins": [
+        "http://backend:3000"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "admin",
+      "email": "admin@admin.com",
+      "username": "admin",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "temporary": false,
+          "type": "password",
+          "value": "keycloak"
+        }
+      ]
+    }
+  ]
+}
