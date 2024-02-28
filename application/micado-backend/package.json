@@ -49,6 +49,7 @@
     "!*/__tests__"
   ],
   "dependencies": {
+    "@exlinc/keycloak-passport": "^1.0.2",
     "@loopback/boot": "^6.1.5",
     "@loopback/core": "^5.1.5",
     "@loopback/repository": "^6.1.5",
